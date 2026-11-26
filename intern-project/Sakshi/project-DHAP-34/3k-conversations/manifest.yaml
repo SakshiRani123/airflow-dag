@@ -1,0 +1,14 @@
+dataset: 3k_conversations
+description: 3K Conversations Dataset for ChatBot
+source: Kaggle
+source_file: conversation.csv
+owner: Sakshi
+project_id: DHAP-34
+target_table: conversations
+status: done
+row_count: 3725
+column_count: 3
+created_date: '2026-10-04'
+pipeline_type: batch_etl
+orchestrator: apache_airflow
+storage_engine: postgresql

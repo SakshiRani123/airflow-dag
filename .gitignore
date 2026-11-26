@@ -1,0 +1,21 @@
+# Environments and credentials
+.env
+*.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Airflow local logs & runtime
+logs/
+*.log
+
+# Docker & OS artifacts
+.DS_Store
+Thumbs.db

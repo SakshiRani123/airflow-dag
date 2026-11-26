@@ -1,0 +1,27 @@
+version: "1.0"
+dataset: 3k_conversations
+target_table: conversations
+columns:
+  - name: conversation_id
+    source_name: "Unnamed: 0"
+    data_type: integer
+    sql_type: INTEGER
+    nullable: false
+    primary_key: true
+    description: "Unique sequential identifier for each conversation pair."
+
+  - name: question
+    source_name: "question"
+    data_type: string
+    sql_type: TEXT
+    nullable: false
+    primary_key: false
+    description: "Input dialogue or user prompt, trimmed of leading/trailing whitespace."
+
+  - name: answer
+    source_name: "answer"
+    data_type: string
+    sql_type: TEXT
+    nullable: false
+    primary_key: false
+    description: "Response dialogue or conversational reply, trimmed of leading/trailing whitespace."
